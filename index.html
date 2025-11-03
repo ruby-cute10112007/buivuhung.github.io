@@ -1,11 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang giới thiệu Đại học Đại Nam</title>
+  <style>
+    /* ====== RESET & CƠ BẢN ====== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    /* ====== HEADER ====== */
+    header {
+      background-color: #f47c20;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    header h1 {
+      font-size: 2em;
+      margin-bottom: 5px;
+    }
+    header p {
+      font-style: italic;
+    }
+
+    /* ====== THANH ĐIỀU HƯỚNG ====== */
+    nav {
+      background-color: #fff;
+      text-align: center;
+      padding: 10px;
+      border-bottom: 2px solid #f47c20;
+    }
+    nav a {
+      text-decoration: none;
+      color: #f47c20;
+      font-weight: bold;
+      margin: 0 15px;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #d45b00;
+      text-decoration: underline;
+    }
+
+    /* ====== NỘI DUNG CHÍNH ====== */
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px 20px;
+      background-color: #fff7f0;
+    }
+    section {
+      flex: 1 1 300px;
+      max-width: 600px;
+      background-color: #fff;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    }
+    section h2 {
+      color: #f47c20;
+      border-bottom: 2px solid #f47c20;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+    }
+    section p {
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    /* ====== HÌNH ẢNH ====== */
+    .image-box {
+      text-align: center;
+      margin-top: 15px;
+    }
+    .image-box img {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 10px;
+      border: 3px solid #f47c20;
+      transition: 0.3s;
+    }
+    .image-box img:hover {
+      transform: scale(1.03);
+    }
+
+    /* ====== FOOTER ====== */
+    footer {
+      background-color: #f47c20;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+    footer p {
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
-    <h1>đại nam</h1>
+  <!-- ====== PHẦN ĐẦU ====== -->
+  <header>
+    <h1>ĐẠI HỌC ĐẠI NAM</h1>
+    <p>Đoàn kết - Sáng tạo - Hội nhập - Phát triển</p>
+  </header>
+
+  <!-- ====== THANH MENU ====== -->
+  <nav>
+    <a href="#">Trang chủ</a>
+    <a href="#">Giới thiệu</a>
+    <a href="#">Ngành học</a>
+    <a href="#">Tuyển sinh</a>
+    <a href="#">Liên hệ</a>
+  </nav>
+
+  <!-- ====== NỘI DUNG ====== -->
+  <main>
+    <section>
+      <h2>Giới thiệu về trường</h2>
+      <p>
+        Trường Đại học Đại Nam là một trong những cơ sở giáo dục đại học năng động và hiện đại tại Việt Nam.
+        Với triết lý đào tạo “Thực học - Thực hành - Thực danh - Thực nghiệp”, trường luôn chú trọng đến
+        chất lượng giảng dạy và kỹ năng thực tế cho sinh viên.
+      </p>
+      <div class="image-box">
+        <img src="https://dainam.edu.vn/uploads/images/2023/05/10/dainam.jpg" alt="Trường Đại học Đại Nam">
+      </div>
+    </section>
+
+    <section>
+      <h2>Các ngành đào tạo nổi bật</h2>
+      <p>
+        Đại học Đại Nam hiện đào tạo nhiều ngành hot như: Công nghệ thông tin, Quản trị kinh doanh, Dược học,
+        Kỹ thuật ô tô, Du lịch, Truyền thông đa phương tiện... nhằm đáp ứng nhu cầu nhân lực chất lượng cao
+        trong kỷ nguyên số hóa.
+      </p>
+    </section>
+
+    <section>
+      <h2>Môi trường học tập</h2>
+      <p>
+        Sinh viên được học trong môi trường thân thiện, cơ sở vật chất hiện đại, giảng viên tận tâm, chương trình
+        học luôn được cập nhật theo xu hướng mới nhất. Đại học Đại Nam là nơi chắp cánh ước mơ cho tương lai bền vững.
+      </p>
+      <div class="image-box">
+        <img src="https://dainam.edu.vn/uploads/images/2024/02/05/dn-campus.jpg" alt="Khuôn viên Đại học Đại Nam">
+      </div>
+    </section>
+  </main>
+
+  <!-- ====== CHÂN TRANG ====== -->
+  <footer>
+    <p>&copy; 2025 Trường Đại học Đại Nam - Thiết kế bởi sinh viên CNTT</p>
+  </footer>
 </body>
 </html>
